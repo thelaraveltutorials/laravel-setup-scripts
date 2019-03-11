@@ -1,11 +1,10 @@
 #!/bin/bash
 
-echo "########################################################"
-echo "#                                                      #"
-echo "#   Welcome to laravel Apllication Installer           #"
-echo "#        Deleveoped by Puneet Choudhary                #"
-echo "#                                                      #"
-echo "########################################################"
+echo "################################################################"
+echo "#           Welcome to Laravel Application Installer           #" 
+echo "#             Developed by TheLaravelTutorial Team             #" 
+echo "#                     Version: 1.0 (Stable)                   #" 
+echo "################################################################"
 
 
 read -p 'Enter project name: ' projectName
