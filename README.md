@@ -31,6 +31,8 @@ NOTE: Please note that this script change /var/ww/html/laravel-project folder pe
 
 Download the zip file, extract zip file in home directory and chage directory to laravel-setup-scripts
 
+Open laravel-installer.bat with any text editor or notepadd, and change xamppAddress=D:\xampp to xamppAddress=<xampp installation location>
+
 Open Command prompt as administrator
 ```cmd
 laravel-installer.bat
