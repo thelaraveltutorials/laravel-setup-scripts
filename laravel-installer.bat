@@ -1,11 +1,10 @@
 @echo off
 
-echo ########################################################
-echo #                                                      #
-echo #   Welcome to laravel Apllication Installer           #
-echo #        Deleveoped by Puneet Choudhary                #
-echo #                                                      #
-echo ########################################################
+echo ################################################################
+echo #           Welcome to laravel Apllication Installer           # 
+echo #             Developed by TheLaravelTutorial Team             # 
+echo #                     Version: 1.0 (Stable)                    # 
+echo ################################################################
 
 title Laravel Project Installer
 
