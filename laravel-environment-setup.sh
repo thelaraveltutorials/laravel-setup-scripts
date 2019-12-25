@@ -101,6 +101,9 @@ if [ "$my_mysql_password" == "$my_mysql_password2" ]; then
         debconf-set-selections <<< "phpmyadmin phpmyadmin/app-password-confirm password $MYSQL_ROOT_PASS"
         apt-get -y install phpmyadmin
         echo -e "\n[+] Installed PHPMyAdmin!"
+        echo -e "\n[+] Patching PHPMyAdmin count error!"
+        sudo sed -i "s/|\s*\((count(\$analyzed_sql_results\['select_expr'\]\)/| (\1)/g" /usr/share/phpmyadmin/libraries/sql.lib.php
+        sudo service apache2 restart
 
         read -p "Do you want to install Visual Studio Code? [yes/no]: "  vscode
         if [ "$vscode" == "yes" ]; then
@@ -110,6 +113,7 @@ if [ "$my_mysql_password" == "$my_mysql_password2" ]; then
             sudo dpkg -i code_1.31.0-1549443364_amd64.deb 
             echo -e "\n[+] Installed Visual Studio Code!"
         fi
+        
         echo -e "\nEnjoy"
         echo -e "\n    The Laravel Tutorial Team"
     fi
